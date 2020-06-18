@@ -1,0 +1,10 @@
+C:\Gomi-Project\GomiSolution\GomiShop.Common\bin\Debug\GomiShop.Common.dll
+C:\Gomi-Project\GomiSolution\GomiShop.Common\bin\Debug\GomiShop.Common.pdb
+C:\Gomi-Project\GomiSolution\GomiShop.Common\obj\Debug\GomiShop.Common.csprojAssemblyReference.cache
+C:\Gomi-Project\GomiSolution\GomiShop.Common\obj\Debug\GomiShop.Common.csproj.CoreCompileInputs.cache
+C:\Gomi-Project\GomiSolution\GomiShop.Common\obj\Debug\GomiShop.Common.dll
+C:\Gomi-Project\GomiSolution\GomiShop.Common\obj\Debug\GomiShop.Common.pdb
+C:\Gomi-Project\GomiSolution\GomiShop.Common\bin\Debug\Newtonsoft.Json.dll
+C:\Gomi-Project\GomiSolution\GomiShop.Common\bin\Debug\Newtonsoft.Json.pdb
+C:\Gomi-Project\GomiSolution\GomiShop.Common\bin\Debug\Newtonsoft.Json.xml
+C:\Gomi-Project\GomiSolution\GomiShop.Common\obj\Debug\GomiShop.Common.csproj.CopyComplete

@@ -1,0 +1,16 @@
+C:\Gomi-Project\GomiSolution\GomiShop.Data\obj\Debug\GomiShop.Data.csprojAssemblyReference.cache
+C:\Gomi-Project\GomiSolution\GomiShop.Data\obj\Debug\GomiShop.Data.csproj.CoreCompileInputs.cache
+C:\Gomi-Project\GomiSolution\GomiShop.Data\bin\Debug\GomiShop.Data.dll.config
+C:\Gomi-Project\GomiSolution\GomiShop.Data\bin\Debug\GomiShop.Data.dll
+C:\Gomi-Project\GomiSolution\GomiShop.Data\bin\Debug\GomiShop.Data.pdb
+C:\Gomi-Project\GomiSolution\GomiShop.Data\bin\Debug\EntityFramework.dll
+C:\Gomi-Project\GomiSolution\GomiShop.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Gomi-Project\GomiSolution\GomiShop.Data\bin\Debug\GomiShop.Common.dll
+C:\Gomi-Project\GomiSolution\GomiShop.Data\bin\Debug\GomiShop.Core.dll
+C:\Gomi-Project\GomiSolution\GomiShop.Data\bin\Debug\GomiShop.Common.pdb
+C:\Gomi-Project\GomiSolution\GomiShop.Data\bin\Debug\GomiShop.Core.pdb
+C:\Gomi-Project\GomiSolution\GomiShop.Data\bin\Debug\EntityFramework.xml
+C:\Gomi-Project\GomiSolution\GomiShop.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Gomi-Project\GomiSolution\GomiShop.Data\obj\Debug\GomiShop.Data.csproj.CopyComplete
+C:\Gomi-Project\GomiSolution\GomiShop.Data\obj\Debug\GomiShop.Data.dll
+C:\Gomi-Project\GomiSolution\GomiShop.Data\obj\Debug\GomiShop.Data.pdb
