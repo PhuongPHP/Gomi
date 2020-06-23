@@ -13,11 +13,35 @@ namespace GomiShop.Web
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            //routes.MapRoute(
+            //    name: "Default",
+            //    url: "{controller}/{action}/{id}",
+            //    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            //);
             routes.MapRoute(
-                name: "Default",
+                name: "Trang chủ",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+                namespaces: new string[] { "GomiShop.Web.Controllers" }
             );
+            routes.MapRoute(
+                name: "Trang Admin",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Admin", action = "Index", id = UrlParameter.Optional },
+                namespaces: new string[] { "GomiShop.Web.Controllers" }
+            );
+            routes.MapRoute(
+                name: "Trang login",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Login", action = "Index", id = UrlParameter.Optional },
+                namespaces: new string[] { "GomiShop.Web.Controllers" }
+            );
+            routes.MapRoute(
+               name: "Product",
+               url: "products",
+               defaults: new { controller = "Product", action = "Index", id = UrlParameter.Optional },
+               namespaces: new string[] { "GomiShop.Web.Controllers" }
+              );
         }
     }
 }

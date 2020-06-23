@@ -11,3 +11,16 @@ C:\Gomi-Project\GomiSolution\GomiShop.Service\obj\Debug\GomiShop.Service.csproj.
 C:\Gomi-Project\GomiSolution\GomiShop.Service\obj\Debug\GomiShop.Service.csproj.CopyComplete
 C:\Gomi-Project\GomiSolution\GomiShop.Service\obj\Debug\GomiShop.Service.dll
 C:\Gomi-Project\GomiSolution\GomiShop.Service\obj\Debug\GomiShop.Service.pdb
+C:\Project\Gomi\GomiSolution\GomiShop.Service\bin\Debug\GomiShop.Service.dll
+C:\Project\Gomi\GomiSolution\GomiShop.Service\bin\Debug\GomiShop.Service.pdb
+C:\Project\Gomi\GomiSolution\GomiShop.Service\bin\Debug\GomiShop.Common.dll
+C:\Project\Gomi\GomiSolution\GomiShop.Service\bin\Debug\GomiShop.Core.dll
+C:\Project\Gomi\GomiSolution\GomiShop.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Project\Gomi\GomiSolution\GomiShop.Service\bin\Debug\GomiShop.Common.pdb
+C:\Project\Gomi\GomiSolution\GomiShop.Service\bin\Debug\GomiShop.Core.pdb
+C:\Project\Gomi\GomiSolution\GomiShop.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Project\Gomi\GomiSolution\GomiShop.Service\obj\Debug\GomiShop.Service.csprojAssemblyReference.cache
+C:\Project\Gomi\GomiSolution\GomiShop.Service\obj\Debug\GomiShop.Service.csproj.CoreCompileInputs.cache
+C:\Project\Gomi\GomiSolution\GomiShop.Service\obj\Debug\GomiShop.Service.csproj.CopyComplete
+C:\Project\Gomi\GomiSolution\GomiShop.Service\obj\Debug\GomiShop.Service.dll
+C:\Project\Gomi\GomiSolution\GomiShop.Service\obj\Debug\GomiShop.Service.pdb

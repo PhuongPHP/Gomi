@@ -67,6 +67,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Category\Icon\ic_danh-cho-thu-cung.png" />
+    <Content Include="Category\Icon\ic_dien-gia-dung.png" />
+    <Content Include="Category\Icon\ic_dien-thoai-may-tinh-bang.png" />
+    <Content Include="Category\Icon\ic_do-choi-me-be.png" />
+    <Content Include="Category\Icon\ic_ho-tro-tinh-duc.png" />
+    <Content Include="Category\Icon\ic_lam-dep-suc-khoe.png" />
+    <Content Include="Category\Icon\ic_laptop-thiet-bi-it.png" />
+    <Content Include="Category\Icon\ic_nha-cua-doi-song.png" />
+    <Content Include="Category\Icon\ic_phu-kien-thiet-bi-so.png" />
+    <Content Include="Category\Icon\ic_tat-ca.png" />
+    <Content Include="Category\Icon\ic_the-thao-da-ngoai.png" />
+    <Content Include="Category\Icon\ic_thoi-trang-phu-kien.png" />
+    <Content Include="Category\Icon\ic_thuc-pham.png" />
+    <Content Include="Category\Icon\ic_trang-suc-phu-kien.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

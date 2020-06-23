@@ -11,7 +11,7 @@ namespace GomiShop.Web.Controllers
         // GET: Login
         public ActionResult Index()
         {
-            return PartialView("~/Views/Login/Login.cshtml");  
+            return View();  
         }
     }
 }

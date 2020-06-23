@@ -1,0 +1,206 @@
+﻿
+@{
+    ViewBag.Title = "Menu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0 text-dark">Trang chủ</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item">Sản phẩm</li>
+                    <li class="breadcrumb-item active">Danh mục sản phẩm</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="content">
+    <!-- Default box -->
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Danh mục sản phẩm</h3>
+
+            <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Từ khoá">
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-default btn-flat">Tìm kiếm</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    @using (Ajax.BeginRouteForm("GetFormMegaCate", new { id = 0 }, new AjaxOptions()
+                    {
+                        OnBegin = "megaCate.getHtmlFrm.OnBegin",
+                        OnSuccess = "megaCate.getHtmlFrm.OnSuccess",
+                        OnComplete = "megaCate.getHtmlFrm.OnComplete",
+                        HttpMethod = "POST"
+                    }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn btn-outline-primary ml-3">Thêm</button>
+                    }
+                    <button type="submit" class="btn btn btn-success">Thêm mới</button>
+                    @*<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-lg">
+                            Thêm mới
+                        </button>*@
+                    <button class="btn btn-danger" id="btnDelete" disabled="disabled">Xóa</button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="card-body p-0">
+
+            <ul class="cate-list" id="mega-list">
+                <!--List Mega Category-->
+            </ul>
+            <table class="table table-striped projects">
+                <thead>
+                    <tr>
+                        <th style="width: 2%">
+                            <div class="icheck-primary d-inline">
+                                <input type="checkbox" id="checkboxPrimary2">
+                                <label for="checkboxPrimary2">
+                                </label>
+                            </div>
+                        </th>
+                        <th style="width: 1%">
+                            ID
+                        </th>
+                        <th style="width: 30%">
+                            Tên danh mục
+                        </th>
+                        <th style="width: 20%">
+                            Ngày tạo
+                        </th>
+                        <th style="width: 20%">
+                            Trạng thái
+                        </th>
+
+                        <th style="width: 20%;text-align:center;">
+                            Thao tác
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="icheck-primary d-inline">
+                                <input type="checkbox" id="checkboxPrimary3">
+                                <label for="checkboxPrimary3">
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            #
+                        </td>
+                        <td>
+                            <a>
+                                Sức khoẻ
+                            </a>
+                            <br>
+                        </td>
+                        <td>
+                            <span>22/06/2020 11:19:12</span>
+                        </td>
+                        <td class="project_progress">
+                            <span class="badge badge-success">Kích hoạt</span>
+                        </td>
+                        <td class="project-actions text-center">
+                            <a class="btn btn-info btn-sm" href="#">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+                            </a>
+                            <a class="btn btn-danger btn-sm" href="#">
+                                <i class="fas fa-trash">
+                                </i>
+                            </a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+
+</section>
+
+<!-- Modal insert Mega Category-->
+<div class="modal fade" id="modalCate" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+        </div>
+    </div>
+</div>
+@*<div class="modal fade" id="modal-lg">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Thêm danh mục sản phẩm</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="inputName" style="font-weight: normal;">Tên (Tiếng Việt)</label>
+                        <input type="text" id="inputName" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputName" style="font-weight: normal;">Tên(Tiếng anh)</label>
+                        <input type="text" id="inputName" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputFile"style="font-weight: normal;">Icon (64 x 64)</label>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="exampleInputFile">
+                                <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icheck-primary d-inline">
+                        <input type="checkbox" id="checkboxPrimary2">
+                        <label for="checkboxPrimary2" style="font-weight: normal;">
+                            Hiển thị
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Lưu</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>*@
+
+@*<script src="~/Scripts/jquery-3.5.1.min.js"></script>*@
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/category")
+}
+

@@ -10,11 +10,14 @@ namespace GomiShop.Core.Model
         public string Name_en { get; set; }
         public bool IsDefault { get; set; }
         public Status Status { get; set; }
+
     }
     public class Variant : BaseProduct
     {
         public int? VariantId { get; set; }
+
     }
+
     public partial class Product
     {
         public Guid Id { get; set; }
@@ -29,6 +32,21 @@ namespace GomiShop.Core.Model
         public ProductStatus Status { get; set; }
         public int TotalRows { get; set; }
     }
+
+
+    public partial class Product
+    {
+        public int MegaCateId { get; set; }
+        public string MegaCateName_vi { get; set; }
+        public string MegaCateName_en { get; set; }
+        public int CategoryId { get; set; }
+        public string CategoryName_vi { get; set; }
+        public string CategoryName_en { get; set; }
+        public int SubCategoryId { get; set; }
+        public string SubCategoryName_vi { get; set; }
+        public string SubCategoryName_en { get; set; }
+    }
+
     public partial class Product
     {
         public string MediaPath { get; set; }
@@ -51,6 +69,7 @@ namespace GomiShop.Core.Model
         public string MegaCategoryName_vi { get; set; }
 
     }
+
 
     public class ProductDetails
     {
@@ -134,6 +153,8 @@ namespace GomiShop.Core.Model
         public Status Status { get; set; }
         public DateTime CreatedDate { get; set; }
         public int VariantValueId { get; set; }
+
+
     }
 
     public class ProductFilter

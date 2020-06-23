@@ -37,6 +37,8 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,8 +50,10 @@
     <Compile Include="Configuration\AppSetting.cs" />
     <Compile Include="Configuration\Config.cs" />
     <Compile Include="Disposable\Disposable.cs" />
+    <Compile Include="Extensions\DateExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Helper\Calculator.cs" />
+    <Compile Include="Helper\FileHelpers.cs" />
     <Compile Include="Helper\StringHelper.cs" />
     <Compile Include="Parameter\ParamItem.cs" />
     <Compile Include="Parameter\Params.cs" />

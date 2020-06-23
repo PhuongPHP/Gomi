@@ -45,12 +45,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\BaseService.cs" />
+    <Compile Include="CategoryService.cs" />
+    <Compile Include="MegaCategoryService.cs" />
     <Compile Include="Products\PriceListService.cs" />
     <Compile Include="Products\ProductAttributeService.cs" />
     <Compile Include="Products\ProductDetailService.cs" />
     <Compile Include="Products\ProductMediaService.cs" />
     <Compile Include="Products\ProductService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubCategoryService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GomiShop.Common\GomiShop.Common.csproj">
