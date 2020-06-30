@@ -24,15 +24,18 @@ namespace GomiShop.Admin
                defaults: new { controller = "Product", action = "Index", id = UrlParameter.Optional },
                namespaces: new string[] { "GomiShop.Admin.Controllers" }
               );
-            routes.MapRoute(
-               name: "Category",
-               url: "category",
-               defaults: new { controller = "Category", action = "Index", id = UrlParameter.Optional },
-               namespaces: new string[] { "GomiShop.Admin.Controllers" }
-              );
+            //===============================================
+            //                  *Category*
+            //===============================================
+            // List
+            routes.MapRoute("CategoryIndex", "category", new
+            {
+                controller = "Category",
+                action = "Index",
+            }, namespaces: new[] { "Web.Admin.Controllers" });
             routes.MapRoute(
                name: "Home",
-               url: "admin",
+               url: "",
                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
                namespaces: new string[] { "GomiShop.Admin.Controllers" }
               );
